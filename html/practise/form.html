@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+
+  <body>
+    <h1>Forms</h1>
+
+    <form>
+      <label for="fname">First Name:</label>
+      <input
+        type="text"
+        id="fname"
+        name="fname"
+        placeholder="Enter your first name"
+      />
+      <br />
+      <br />
+      <label for="lname">Last Name:</label>
+      <input
+        type="text"
+        id="lname"
+        name="lname"
+        placeholder="Enter your last name"
+      />
+      <br />
+      <br />
+      <label for="email">Email:</label>
+      <input
+        type="text"
+        id="email"
+        name="email"
+        placeholder="Enter your email"
+      />
+      <br />
+      <br />
+      <label for="pwd">Password:</label>
+      <input
+        type="password"
+        id="pwd"
+        name="pwd"
+        placeholder="Enter your password"
+      />
+      <br />
+      <br />
+      <input type="submit" value="Submit" />
+    </form>
+
+    <form>
+      <h2>Text Area</h2>
+      <p>What did you think of this gig?</p>
+      <textarea name="comments" cols="20" rows="4">
+Enter 
+         your comments...</textarea
+      >
+    </form>
+    <h2>Radio Buttons</h2>
+    <form>
+      <p>
+        Please select your favorite genre:
+        <br />
+        <input type="radio" name="genre" value="rock" checked="checked" /> Rock
+        <input type="radio" name="genre" value="pop" />
+        Pop
+        <input type="radio" name="genre" value="jazz" />
+        Jazz
+      </p>
+    </form>
+    <h2>Checkboxes</h2>
+
+    <form>
+      <p>
+        Please select your favorite music service(s):
+        <br />
+        <input
+          type="checkbox"
+          name="service"
+          value="itunes"
+          checked="checked"
+        />
+        iTunes <input type="checkbox" name="service" value="lastfm" /> Last.fm
+        <input type="checkbox" name="service" value="spotify" /> Spotify
+      </p>
+    </form>
+
+    <h2>DropDown List</h2>
+    <form>
+      <p>What device do you listen to music on?</p>
+      <select name="devices">
+        <option value="ipod">iPod</option>
+        <option value="radio">Radio</option>
+        <option value="computer">Computer</option>
+      </select>
+    </form>
+
+    <h1>Upload</h1>
+    <form method="post">
+      <p>Upload your song in MP3 format:</p>
+      <input type="file" name="user-song" /><br />
+      <input type="submit" value="Upload" />
+    </form>
+<h1>Iframe</h1>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3320.6633468354353!2d73.04767427479595!3d33.665883938033915!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38df9570806ed9ed%3A0x894fbeb9e70954d4!2sNational%20University%20Of%20Modern%20Languages%20(NUML)!5e0!3m2!1sen!2s!4v1707951322474!5m2!1sen!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </body>
+</html>
