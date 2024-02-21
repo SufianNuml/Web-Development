@@ -1,0 +1,168 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+.main {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+/* navbar css start */
+.nav {
+  width: 100%;
+  height: 100px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px solid #dadada;
+}
+.nav h2 {
+  padding-left: 3vw;
+  font-size: 3vw;
+  font-weight: 700;
+}
+.nav-part2 {
+  padding-right: 3vw;
+}
+.nav-part2 li {
+  list-style: none;
+}
+.nav-part2 ul {
+  display: flex;
+  /* background-color: rgb(201, 201, 237); */
+  align-items: center;
+  gap: 4vw;
+}
+.nav-part2 ul li a {
+  text-decoration: none;
+  color: black;
+  font-size: 1.4vw;
+}
+
+.nav-part2 ul i {
+  font-size: 2vw;
+  font-weight: 700;
+  display: none;
+}
+.nav-part2 ul button {
+  font-size: 1.5vw;
+  padding: 0.7vw 1.5vw;
+  background-color: #ff735c;
+  color: white;
+}
+
+/* Content */
+
+.content {
+  width: 100%;
+  height: calc(100% - 102px);
+
+  display: flex;
+}
+.content .left-box {
+  width: 55%;
+  height: 100%;
+
+  padding: 5vw 3.54vw;
+}
+.left-box h1 {
+  font-size: 4vw;
+  line-height: 4.4vw;
+}
+.left-box h1 span {
+  color: #ff735c;
+}
+
+.left-box p {
+  font-size: 1.25vw;
+  font-weight: 600;
+  color: #666;
+  width: 80%;
+  margin-top: 2vw;
+  margin-bottom: 4vw;
+}
+
+.left-box button {
+  font-size: 1.5vw;
+  padding: 1.3vw 2.3vw;
+  background-color: #ff735c;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-weight: 700;
+}
+.content .right-box {
+  width: 45%;
+  height: 100%;
+}
+.right-box img {
+  width: 100%;
+  height: 100%;
+}
+
+@media (max-width: 600px) {
+  .nav {
+    width: 100%;
+    height: 60px;
+  }
+  .nav button {
+    display: none;
+  }
+  .nav h2 {
+    font-size: 6vw;
+    padding-left: 10vw;
+  }
+  .nav-part2 ul li {
+    display: none;
+  }
+  .nav-part2 ul i {
+    display: block;
+    font-size: 6vw;
+    padding-right: 4vw;
+  }
+
+  .content {
+    width: 90%;
+    height: calc(100% - 80px);
+
+    flex-direction: column;
+  }
+  .content p {
+    line-height: 6vw;
+  }
+
+  .content .left-box {
+    width: 100%;
+    height: 50%;
+  }
+  .content .left-box h1 {
+    font-size: 10vw;
+    line-height: 11vw;
+  }
+  .content .left-box p {
+    font-size: 4vw;
+    width: 100%;
+    padding-left: 3vw;
+    padding-right: 3vw;
+    margin-top: 5vw;
+    margin-bottom: 6vw;
+  }
+  .content .left-box button {
+    padding: 3vw 6vw;
+    border-radius: 3px;
+    font-size: 3.5vw;
+    font-weight: 600;
+    margin-left: 3vw;
+  }
+  .content .right-box {
+    width: 100%;
+    height: 50%;
+  }
+}
