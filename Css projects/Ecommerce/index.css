@@ -1,0 +1,427 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  /* background-color: gray; */
+}
+
+/* NavBar section start */
+.mobile-nav{
+    display: none;
+}
+.nav {
+  display: flex;
+  justify-content: space-between;
+  background-color: white;
+  margin-top: 2vh;
+}
+
+.logo {
+  /* background-color: red; */
+  margin-left: 50px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.logo h1 {
+  margin-top: 1vh;
+  font-size: xx-large;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+.logo p {
+  margin-top: 2px;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-weight: bold;
+  padding-bottom: 0.5vh;
+}
+
+.nav-links {
+  /* background-color: orange; */
+}
+
+.nav-list {
+  list-style: none;
+  display: flex;
+}
+.nav-list li {
+  margin-top: 2vh;
+}
+.nav-list li a {
+  text-decoration: none;
+  color: #121212;
+  padding-left: 10px;
+  padding-right: 10px;
+  font-size: 2vw;
+}
+
+.nav-search {
+  /* background-color: red; */
+  display: flex;
+  border-bottom: 1px solid #121212;
+  padding-left: 0.5vw;
+  padding-right: 3vw;
+}
+.nav-search span {
+  margin-top: 20px;
+  /* font-weight: bolder; */
+  font-size: xx-large;
+}
+.nav-search h1 {
+  margin-top: 20px;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  padding-left: 10px;
+}
+.nav-login {
+  /* background-color: orange; */
+  display: flex;
+  align-items: center;
+  margin-right: 4vw;
+}
+.nav-login h1 {
+  padding-left: 2vw;
+  padding-right: 2vw;
+  color: #121212;
+}
+.nav-login .person {
+  font-size: xx-large;
+  background-color: black;
+  color: white;
+  border-radius: 30%;
+}
+
+.nav-login .bag {
+  font-size: xx-large;
+  background-color: black;
+  color: white;
+  border-radius: 30%;
+  padding-bottom: 0.5vh;
+}
+
+.nav-login .menu {
+    font-size: xx-large;
+    /* background-color: black;
+    color: white; */
+    border-radius: 30%;
+    padding-bottom: 0.5vh;
+    padding-left: 1vw;
+    display: none;
+  }
+/* NavBar section end */
+
+/* Body Part Start */
+
+/* Product Section Start */
+
+.products-lists {
+  /* background-color: gray; */
+  width: 90vw;
+  margin-left: 5vw;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.product1 {
+  width: 25vw;
+  /* background-color: orange; */
+  height: 50vh;
+}
+.box1 {
+  width: 25vw;
+  /* border: 2px solid black; */
+  margin: 4vh;
+}
+.product1-text {
+  /* background-color: red; */
+  margin-top: 1vh;
+}
+.product1-text h2 {
+  margin-left: 8vw;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+.product1-text-prize {
+  padding-left: 2vw;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+
+.product-buy-button {
+  background-color: white;
+  color: black;
+  padding: 1vw;
+  border: 2px solid black;
+  border-radius: 12px;
+  margin-left: 7.3vw;
+  margin-top: 1vh;
+  margin-bottom: 1vh;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-size: x-large;
+  visibility: hidden;
+}
+.product1-img {
+  /* width: 25vw;
+    margin-top: 6vh;
+    height: 40vh;
+     */
+
+  transition: transform 0s ease;
+  /* Ensure the image fits well in the box initially; you might adjust this */
+  width: 100%;
+  height: 40vh;
+  display: block;
+}
+
+/* box1 hover  */
+
+.box1:hover .product1 {
+  /* background-color: red; */
+}
+
+.box1:hover .product1-img {
+  width: 30vw;
+}
+
+.box1 {
+  /* Ensure the container's size doesn't change when the image zooms */
+  overflow: hidden;
+}
+
+.box1:hover .product1-img {
+  /* Scale the image to simulate zooming in */
+  width: 90%;
+  transform: scale(1.5); /* Adjust scaling factor as needed */
+}
+
+.box1:hover .product-buy-button {
+  visibility: visible;
+}
+.product-buy-button:hover {
+  background-color: black;
+  color: white;
+}
+
+/* about section start */
+.about {
+  width: 100vw;
+  height: 70vh;
+  /* background-color: yellow; */
+  background-color: #e8e6e659;
+}
+.about h1 {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  color: #121212;
+  display: flex;
+  justify-content: center;
+  padding-top: 15vh;
+}
+.about p {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  color: #121212;
+  display: flex;
+  justify-content: center;
+  padding-left: 20vw;
+  padding-right: 20vw;
+  padding-top: 3vh;
+  font-size: x-large;
+  line-height: 7vh;
+}
+
+/* about section end */
+
+/* <!-- Contact section start --> */
+
+.contact {
+  width: 100vw;
+  height: 70vh;
+  /* background-color: yellow; */
+  background-color: #121212;
+}
+
+/* <!-- Contact section end --> */
+.contact-ul {
+  display: flex;
+  justify-content: space-evenly;
+  padding-top: 10vh;
+  margin-left: 10vw;
+  margin-right: 10vw;
+}
+.contact-ul li {
+  color: white;
+
+  list-style: none;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+
+  line-height: 6vh;
+  font-size: x-large;
+}
+
+.contact p {
+  color: white;
+  margin-top: 8vh;
+  font-size: x-large;
+  margin-left: 21vw;
+}
+
+.contact h4 {
+  color: #757575;
+  margin-top: 4vh;
+  margin-left: 21vw;
+}
+.contact-message-box {
+  /* background-color: red; */
+  display: flex;
+}
+.contact-message {
+  width: 40vw;
+  /* background-color: purple; */
+  margin-left: 21vw;
+  border-bottom: 3px solid white;
+}
+.contact-message-box button {
+  background-color: white;
+  color: black;
+  padding: 2vh;
+  border-radius: 4px;
+  margin-left: 1vw;
+}
+
+/* Copyright section start here */
+
+.Copyright {
+  background-color: #757575;
+  display: flex;
+  justify-content: center;
+}
+.Copyright p {
+  padding: 2vh;
+  font-size: x-large;
+}
+
+/* Copyright section end here */
+
+
+/* Media queries for mobile first approach */
+
+@media screen and (min-width: 320px) and (max-width: 480px){
+    .mobile-nav{
+        display: block;
+    }
+    .logo {
+        /* background-color: red; */
+        margin-left: 20px;
+    }
+    .mobile-nav-search-icon{
+        margin-right: 5vw;
+    }
+    .mobile-navvv h2{
+        margin-left: 5vw;
+    }
+    .mobile-navvv{
+        display: flex;
+        justify-content: space-between;
+        border-bottom: 2px solid black;
+        padding-bottom: 2vh;
+        margin-left: 2vw;
+        margin-top: 5vh;
+    }
+    .nav-login .menu {
+        padding-left: 5vw;
+        display: block;
+    }
+
+    .nav-links{
+        display: none;
+    }
+
+    .nav-search{
+        display: none;
+    }
+
+    .nav-login h1{
+        display: none;
+    }
+    .nav-login .person{
+        display: none;
+    }
+
+
+
+
+    .contact-ul{
+        flex-direction: column;
+    }
+    
+   .contact-ul .contact-ul-2{
+    margin-top: 5vh;
+   }
+   .contact{
+    height: 113vh;
+   }
+   .contact p h4 {
+    margin-left: 5vw;
+   }
+   .contact-message{
+    margin-left:4vw ;
+    width: 90vw;
+    margin-bottom: 1vh;
+    margin-top: 6vh;
+   }
+   .contact-message-box{
+    flex-direction: column;
+   }
+
+   .contact-message-box button{
+    width: 90vw;
+    margin-left: 4vw;
+   }
+
+   
+   .contact p{
+    margin-left: 6vw;
+    margin-right: 5vw;
+   }
+   .contact h4{
+    margin-top: 2vh;
+    margin-left: 8vw;
+    font-size: x-large;
+   }
+
+
+   /* About section start */
+   .about{
+    height: 75vh;
+   
+   }
+   .about h1{
+    padding-top: 3vh;
+   }
+   .about p{
+    line-height: 5vh;
+   }
+
+   /* About section end */
+
+
+
+   /* box  */
+   .box1 {
+    width: 27vw;
+    
+    /* border: 2px solid black; */
+    /* background-color: yellow; */
+    margin: 4vh;
+
+  }
+
+  .product1-text h2{
+    font-size: medium;
+    margin-top: 0;
+    margin-left: 2vw;
+    /* background-color: blue; */
+  }
+  .box1 button{
+    display: none;
+  }
+  .product1{
+    /* background-color: green; */
+    width: 30vw;
+  }
+}
